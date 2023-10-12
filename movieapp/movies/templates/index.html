@@ -9,6 +9,22 @@
 
 <body>
     <h1>Welcome to Movie App</h1>
+
+    <ul>
+        {% for category in categories %}
+        <li>{{ category }}</li>
+        {% endfor %}
+    </ul>
+
+    <div id="movies">
+        {% for movie in movies%}
+        <div>
+            <p>{{ movie.movie_name }}</p>
+            <p>{{ movie.description }}</p>
+            <img src="{{ movie.image}}" alt="#">
+        </div>
+        {% endfor %}
+    </div>
 </body>
 
 </html>

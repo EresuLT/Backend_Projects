@@ -1,14 +1,6 @@
 from django.shortcuts import render
 from .models import Category, Movie
 
-category_list = [
-    "Adventure",
-    "Romantic",
-    "Drama",
-    "Comedy",
-    "Science Fiction",
-]
-
 movie_list = [
     {
         "id": 1,
